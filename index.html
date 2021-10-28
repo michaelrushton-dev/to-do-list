@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body class="bg-blue-300">
+
+<div class="z-0 bg-green-500 animate-pulse shadow-2xl w-96 h-96 absolute left-1/2 top-3/2 rounded-full"></div>
+<div class="z-0 bg-pink-400 animate-pulse shadow-2xl w-96 h-96 absolute right-2/4 top-2/3 rounded-full"></div>
+
+<!-- div to wrap all content -->
+<div class="container backdrop-filter shadow-2xl backdrop-blur-3l relative top-32 z-10 mx-auto p-8 w-1/2 text-center bg-gray-50 rounded-3xl m-4 space-y-2 bg-opacity-40">
+<!-- title -->
+    <header>
+        <h1 class="text-blue-800 text-3xl">My To-Do List
+    </header>
+    
+<!-- input for text -->
+    <div class="flex items-center justify-center bg-blue-500 h-20 p-1">
+        <div>
+            <label for="add-task" class="enter-prompt min-w-ful text-sm">Enter a new task</label>
+            <input type="text" name="add-task" placeholder="i.e walk the dog" class="text-box bg-indigo-100 text-center w-11/12 flex-shrink rounded-full">
+        </div>
+    </div>
+
+<!-- button to add text -->
+    <div class="flex items-center justify-center bg-blue-400 h-20">
+        <button class="add-button bg-gray-500 rounded-full p-3 text-sm">
+            <span class="fas fa-plus"></span>
+            &nbspAdd
+        </button>
+    </div>
+
+<!-- list items -->
+    <div class="bg-indigo-500">
+        <ul class="task-list"></ul>
+    </div>
+
+ <!-- remove last task button    -->
+    <div class="flex items-center justify-center">
+        <button class="remove-button bg-gray-500 rounded-full p-3 text-sm">
+            <span class="fas fa-minus"></span> &nbsp Remove</button>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
